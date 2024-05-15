@@ -8,15 +8,18 @@ use App\Models\Wine;
 
 class PageController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view('home');
     }
 
-    public function nuovaPagina(){
+    public function nuovaPagina()
+    {
         return view('nuova-pagina');
     }
 
-    public function wines(){
+    public function wines()
+    {
         $wines = Wine::all();
 
         return view('wines', compact('wines'));
