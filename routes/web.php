@@ -17,5 +17,6 @@ Route::get('/',[PageController::class, 'index'])->name('home');
 
 Route::get('/nuova-pagina', [PageController::class, 'nuovaPagina'])->name('nuova-pagina');
 
-//commento di prova
+Route::get('/wines',[PageController::class, 'wines'])->name('wines');
 
+//commento di prova

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Wine;
 
 class PageController extends Controller
 {
@@ -13,5 +14,11 @@ class PageController extends Controller
 
     public function nuovaPagina(){
         return view('nuova-pagina');
+    }
+
+    public function wines(){
+        $wines = Wine::all();
+
+        return view('wines', compact('wines'));
     }
 }
