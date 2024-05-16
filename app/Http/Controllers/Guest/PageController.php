@@ -20,7 +20,7 @@ class PageController extends Controller
 
     public function wines()
     {
-        $wines = Wine::all();
+        $wines = Wine::paginate(20);
 
         return view('wines', compact('wines'));
     }

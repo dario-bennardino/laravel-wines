@@ -26,10 +26,13 @@
                         <td>{{ $wine->rating_average }}</td>
                         <td>{{ $wine->rating_reviews }}</td>
                         <td>{{ $wine->location }}</td>
-                        <td>{{ $wine->image }}</td>
+                        <td><img style="max-width: 120px" src="{{ $wine->image }}" alt="{{ $wine->wine }}"></td>
                     </tr>
                 @endforeach
             </tbody>
         </table>
+    </div>
+    <div class="container">
+        {{ $wines->links() }}
     </div>
 @endsection
