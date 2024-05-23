@@ -16,7 +16,7 @@
                         <a class="nav-link" href="{{ route('wines') }}">Wines</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('nuova-pagina') }}">Nuova Pagina</a>
+                        <a class="nav-link" href="{{ route('wines.create') }}">Nuova Pagina</a>
                     </li>
 
                 </ul>
